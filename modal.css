@@ -655,3 +655,10 @@ footer {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .hero-headline {
+    font-size: 4rem;
+    font-weight: normal;
+    white-space: normal;
+  }
+}
