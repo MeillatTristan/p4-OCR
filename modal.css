@@ -110,6 +110,7 @@ img {
   .main-navbar{
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 }
 
