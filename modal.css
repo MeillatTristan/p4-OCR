@@ -111,10 +111,6 @@ img {
     display: flex;
     flex-direction: column;
   }
-
-  .containerLink{
-    padding-top: 50px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -129,6 +125,7 @@ img {
     display: flex;
     text-align: left;
     flex-direction: column;
+    margin-top: 50px;
   }
 }
 
