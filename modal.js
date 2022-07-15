@@ -29,7 +29,7 @@ function launchModal() {
 
 let registerForm = document.getElementById('registerForm');
 
-
+// check if form is submit
 registerForm.addEventListener('submit', function(e){
   let inputFirst = document.getElementById("first");
   let inputLast = document.getElementById("last");
@@ -42,7 +42,7 @@ registerForm.addEventListener('submit', function(e){
   let inputCondition = document.getElementById("checkbox1");
   let count = 0;
 
-
+  // check if all input are valid
   if(inputFirst.value.trim() == "" || inputFirst.value.trim().length < 2) {
     document.getElementById("errorFirst").innerHTML = "Le champ doit faire plus de 2 charactères.";
     count += 1;
@@ -92,6 +92,7 @@ registerForm.addEventListener('submit', function(e){
     e.preventDefault();
   }
 
+  // if no errors add active class to display confirmation screen
   if (count === 0) {
     e.preventDefault();
     document.getElementById('containerForm').classList.add("active");
